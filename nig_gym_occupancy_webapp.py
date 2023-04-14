@@ -47,7 +47,7 @@ def datetime_now(input_timezone_offset):
 def load_worksheet(input_gsheets_url, _input_json):
     """Fetch gsheet via gspread"""
     # authentication
-    gc = gspread.service_account(_input_json)
+    gc = gspread.service_account_from_dict(_input_json)
 
     # import google sheet
     sh = gc.open_by_url(input_gsheets_url)
