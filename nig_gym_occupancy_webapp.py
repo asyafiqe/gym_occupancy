@@ -17,6 +17,7 @@ MAX_SESSION_DUR = 180
 MAX_CAPACITY = 2
 TIMEZONE_OFFSET = +9.0  # 'Tokyo Standard Time' (UTC+09:00)
 CACHE_TTL = 300
+STATIC_PLOT = True
 # %%
 st.set_page_config(
     page_title="NIG Training Gym Occupancy",
@@ -154,8 +155,7 @@ with tab1:
         fig.update(
             layout_showlegend=False,
         )
-
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, use_container_width=True, config = {'staticPlot': STATIC_PLOT})
     else:
         st.write(
             "![confused_travolta](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzBjNzk0MDRkMjFiOTQxZTVlNmVlNzE1ZmY4Y2JhNjU0Y2RhODVjMyZjdD1n/3nZRJP0BBMP28/giphy.gif)"
