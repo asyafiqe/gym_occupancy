@@ -44,7 +44,7 @@ def datetime_now(input_timezone_offset):
 
 
 @st.cache_resource(ttl=CACHE_TTL, show_spinner="Fetching data from API...")
-def load_worksheet(input_gsheets_url, input_json):
+def load_worksheet(input_gsheets_url, _input_json):
     """Fetch gsheet via gspread"""
     # authentication
     gc = gspread.service_account(input_json)
