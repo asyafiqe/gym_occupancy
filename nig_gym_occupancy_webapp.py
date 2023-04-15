@@ -14,7 +14,7 @@ import pandas as pd
 # %%
 # config
 MAX_SESSION_DUR = 180
-MAX_CAPACITY = 2
+MAX_CAPACITY = 5
 TIMEZONE_OFFSET = +9.0  # 'Tokyo Standard Time' (UTC+09:00)
 CACHE_TTL = 300
 STATIC_PLOT = True
