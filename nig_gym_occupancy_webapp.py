@@ -113,7 +113,7 @@ df = df.drop(columns=["delta"])
 st.title(":muscle: NIG Training Gym Occupancy  :man-lifting-weights:")
 
 # %%
-tab1, tab2, tab3, tab4 = st.tabs(["Home", "Login", "Logout", "Data (to be hidden)"])
+tab1, tab2, tab3, tab4 = st.tabs(["Home", "Login", "Logout", "Data"])
 
 with tab1:
     # show number of people currently on the room
